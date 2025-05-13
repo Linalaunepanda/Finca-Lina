@@ -107,6 +107,101 @@ body {
     background-color: #9dc183;
 }
 
+/* Banner für Unterseiten */
+#leistungen-banner {
+    width: 100%;
+    height: 300px;
+    background-image: url('/resources/images/banner/Banner4.png'); /* Dein Bannerbild */
+      background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start; /* Linksbündige Ausrichtung */
+    align-items: center;
+    text-align: left; /* Text linksbündig ausrichten */
+    color: white;
+    margin-top: 100px; /* Damit der Banner direkt unter der Menüleiste beginnt */
+    padding: 0 20px; /* Optionaler Abstand zum Rand */
+}
+
+#leistungen-banner .banner-text {
+     width: 650px; /* Box-Breite von 250px */
+    text-align: left; /* Text innerhalb des Containers linksbündig */
+    padding: 20px;
+    background-color: rgba(134, 133, 133, 0.152); /* Dunkler Hintergrund für besseren Kontrast */
+    border-radius: 10px;
+}
+
+#leistungen-banner .banner-text h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+    text-shadow: 2px 2px 2px #f78f1e; /* Textschatten */
+}
+
+#leistungen-banner .banner-text p {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+/* Paket-Container */
+/* Paket-Container */
+#pakete {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.pakete-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.paket {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+}
+
+.paket-image {
+    width: 80px;  /* Größe der Grafik */
+    height: auto; /* Damit das Bild das Seitenverhältnis behält */
+    margin-bottom: 15px; /* Abstand zwischen Grafik und Text */
+}
+
+.paket h3 {
+    font-size: 2rem;
+    color: #e52a65;
+    margin-bottom: 15px;
+}
+
+.paket p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.paket ul {
+    list-style: none;
+    padding: 0;
+}
+
+.paket ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.paket ul li::before {
+    content: "✔️"; /* Ein Häkchen vor jedem Punkt */
+    margin-right: 8px;
+    color: #e52a65;
+}
+
 /* Leistungen */
 #services {
     padding: 40px 20px;
