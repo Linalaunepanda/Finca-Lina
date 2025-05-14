@@ -127,7 +127,7 @@ body {
      width: 650px; /* Box-Breite von 250px */
     text-align: left; /* Text innerhalb des Containers linksbündig */
     padding: 20px;
-    background-color: rgba(134, 133, 133, 0.152); /* Dunkler Hintergrund für besseren Kontrast */
+    background-color: rgba(247, 246, 246, 0.152); /* Dunkler Hintergrund für besseren Kontrast */
     border-radius: 10px;
 }
 
@@ -143,20 +143,116 @@ body {
     margin-bottom: 20px;
 }
 
-/* Paket-Container */
-/* Paket-Container */
-#pakete {
+
+/* Hero Section */
+#hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 20px;
+    background-color: #ffffff;
+    text-align: left;
+}
+
+.hero-content {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-left {
+    width: 50%;
+    color: #1b575c; /* Die gewünschte Textfarbe */
+}
+
+.text-left h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.text-left p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #e52a65;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.cta-button:hover {
+    background-color: #f78f1e;
+}
+
+.image-right {
+    width: 50%;
+    text-align: center;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    #hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-left, .image-right {
+        width: 100%;
+    }
+
+    .hero-image {
+        max-width: 80%;
+    }
+}
+
+
+/* Geht es dir auch so? - Section */
+#why-choose {
     padding: 60px 20px;
     background-color: #f9f9f9;
     text-align: center;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#why-choose h2 {
+    font-size: 2.5rem;
+    color: #1b575c;
+    margin-bottom: 20px;
+}
+
+#why-choose p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Pakete */
 .pakete-container {
     display: flex;
     justify-content: space-around;
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 20px;
 }
 
 .paket {
@@ -175,7 +271,7 @@ body {
 }
 
 .paket h3 {
-    font-size: 2rem;
+    font-size: 1.75rem;
     color: #e52a65;
     margin-bottom: 15px;
 }
@@ -197,9 +293,16 @@ body {
 }
 
 .paket ul li::before {
-    content: "✔️"; /* Ein Häkchen vor jedem Punkt */
+    content: "✔️";
     margin-right: 8px;
     color: #e52a65;
+}
+
+.paket .price {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #e52a65;
+    margin-top: 20px;
 }
 
 /* Leistungen */
@@ -322,7 +425,7 @@ body {
 /* Kontaktbereich */
 #contact {
     padding: 60px 20px;
-    background-color: #f2f2f2;
+    background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -332,7 +435,7 @@ body {
 .contact-container {
     max-width: 600px;
     width: 100%;
-    background-color: #ffffff;
+   background-color: #f9f9f9;
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
@@ -421,4 +524,230 @@ footer {
 
 .footer-section ul li a:hover {
     color: #e52a65;
+}
+
+
+/* Container für den Inhalt #about-me */
+#about-me {
+    padding: 80px 20px; /* Gleiche Padding wie im #hero */
+    background-color: #f9f9f9;
+    text-align: left;
+    margin: 0 auto;  /* Container wird horizontal zentriert */
+    max-width: 1200px; /* Maximalbreite für den Container */
+}
+
+/* Der Container für inneren Abstand und Inhalt */
+.container {
+    max-width: 1200px;  /* Gleiche Maximalbreite wie im #hero */
+    margin: 0 auto;  /* Zentriert den Container */
+    padding: 20px;  /* Der innere Abstand bleibt gleich */
+}
+
+/* Highlights im Text */
+.highlight-color {
+    color: #43b334; /* Grün */
+    font-weight: bold;
+}
+
+.highlight-orange {
+    color: #f78f1e; /* Orange */
+    font-weight: bold;
+}
+
+.highlight-pink {
+    color: #e52a65; /* Pink */
+    font-weight: bold;
+}
+
+/* Content Wrappers (für Text und Bild nebeneinander) */
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.content-wrapper.reverse {
+    flex-direction: row-reverse;
+}
+
+.text-left, .text-right {
+    width: 45%;
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+    max-width: 400px; /* Die max. Breite der Bilder */
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+/* Bilder (links und rechts) */
+.image-left, .image-right {
+    width: 45%;
+}
+
+/* Box für Highlights */
+.highlight-box {
+    background-color: #f3f3f3;
+    border-left: 5px solid #f78f1e; /* Farbe für die linke Kante */
+    padding: 20px;
+    margin: 20px 0;
+    font-size: 1.2rem;
+    color: #555;
+    font-style: italic;
+}
+
+/* Trennlinie */
+.styled-line {
+    border: 0;
+    border-top: 2px solid #e52a65; /* Farbe für die Linie */
+    margin: 40px 0;
+}
+
+/* Content Wrappers für Text und Bild nebeneinander */
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.content-wrapper.reverse {
+    flex-direction: row-reverse;
+}
+
+.text-left, .text-right {
+    width: 45%;
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+    max-width: 400px; /* Die max. Breite der Bilder */
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+/* Bilder (links und rechts) */
+.image-left, .image-right {
+    width: 45%;
+}
+
+/* Platzhalter für Grafiken */
+.place-holder {
+    background-color: #e1e1e1; /* Grauer Hintergrund als Platzhalter */
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    #about-me {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-left, .image-right {
+        width: 100%;
+    }
+
+    .about-image {
+        max-width: 80%;
+    }
+}
+
+/* Container für den Inhalt #values */
+#values {
+    padding: 80px 20px; /* Gleiche Padding wie im #style */
+    background-color: #ffffff;
+    text-align: left;
+    margin: 0 auto; /* Zentriert den Container */
+    max-width: 1200px; /* Gleiche max. Breite wie im #style */
+}
+
+/* Container für die Inhalte im Abschnitt */
+.values-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+/* Textbereich */
+.text-left {
+    width: 45%;
+}
+
+.text-left p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Platz für das Icon und Text daneben */
+.icon-box {
+    width: 45%;
+    background-color: #f3f3f3; /* Hintergrund für den Abschnitt */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.icon-placeholder {
+    font-size: 3rem; /* Platz für ein großes Icon */
+    margin-bottom: 20px;
+}
+
+.icon-box p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Box für Highlights */
+.highlight-box {
+    background-color: #f3f3f3;
+    border-left: 5px solid #f78f1e; /* Farbe für die linke Kante */
+    padding: 20px;
+    margin: 20px 0;
+    font-size: 1.2rem;
+    color: #555;
+    font-style: italic;
+}
+
+/* Trennlinie */
+.styled-line {
+    border: 0;
+    border-top: 2px solid #e52a65; /* Farbe für die Linie */
+    margin: 40px 0;
+}
+
+/* Mobile Anpassungen */
+@media (max-width: 768px) {
+    #values {
+        text-align: center;
+    }
+
+    .values-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-left, .icon-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
