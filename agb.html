@@ -19,6 +19,13 @@
     <link rel="stylesheet" href="resources/css/style.css" />
   </head>
   <body>
+
+    <!-- Cookie-Banner -->
+<div id="cookie-banner" class="cookie-banner">
+    <p>Diese Webseite verwendet Cookies, um Ihnen das beste Erlebnis auf unserer Website zu bieten. 
+    <a href="datenschutz.html" target="_blank">Mehr erfahren</a>.
+    <button id="accept-cookies" class="cookie-btn">Akzeptieren</button></p>
+</div>
     <!-- Header und Navigation -->
     <!-- Menüleiste -->
     <header class="navbar">
@@ -30,7 +37,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="leistungen.html">Leistungen</a></li>
           <li><a href="über.html">Über Mich</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
+         <!-- <li><a href="#portfolio">Portfolio</a></li> -->
           <li><a href="#contact">Kontakt</a></li>
         </ul>
       </nav>
@@ -74,6 +81,39 @@
     </div>
 </section>
 
+<section id="terms-and-conditions">
+    <div class="container">
+        <h2>Widerrufsrecht</h2>
+
+        <p>Du hast das Recht, binnen <strong>14 Tagen ohne Angabe von Gründen</strong> diesen Vertrag zu widerrufen. Die Widerrufsfrist beträgt 14 Tage ab dem Tag des Vertragsabschlusses.</p>
+
+        <p>Um dein Widerrufsrecht auszuüben, musst du uns (Name deines Unternehmens, Adresse, E-Mail) mittels einer eindeutigen Erklärung (z. B. per Post oder E-Mail) über deinen Entschluss, diesen Vertrag zu widerrufen, informieren.</p>
+
+        <p>Du kannst hierfür das folgende Widerrufsformular verwenden, das jedoch nicht vorgeschrieben ist:</p>
+
+        <pre>
+            Widerrufsformular:
+            - Name des Verbrauchers
+            - Adresse des Verbrauchers
+            - E-Mail des Verbrauchers
+            - Bestellte Dienstleistungen / Produkte
+            - Datum des Vertragsabschlusses
+            - Unterschrift des Verbrauchers (falls per Post gesendet)
+        </pre>
+
+        <h3>Folgen des Widerrufs:</h3>
+        <p>Wenn du diesen Vertrag widerrufst, erstatten wir dir alle Zahlungen, die wir von dir erhalten haben, spätestens binnen <strong>14 Tagen nach Erhalt deiner Widerrufserklärung</strong>.</p>
+
+        <h3>Ausnahmen vom Widerrufsrecht:</h3>
+        <p>Das Widerrufsrecht gilt nicht für Verträge über die Lieferung von:</p>
+        <ul>
+            <li>Waren, die nach Kundenspezifikation angefertigt oder eindeutig auf die persönlichen Bedürfnisse des Kunden zugeschnitten sind.</li>
+            <li>Waren, die schnell verderben können oder deren Verfallsdatum schnell überschritten würde.</li>
+            <li>Verträge, die Dienstleistungen betreffen, die mit ausdrücklicher Zustimmung des Kunden vor Ablauf der Widerrufsfrist begonnen wurden und deren vollständige Erbringung abgeschlossen wurde.</li>
+        </ul>
+    </div>
+</section>
+
 
     <!-- Footer -->
     <footer>
@@ -95,5 +135,17 @@
         </div>
       </div>
     </footer>
+            <script>
+    // Wenn der Benutzer auf "Akzeptieren" klickt, wird das Banner ausgeblendet und die Zustimmung gespeichert.
+document.getElementById('accept-cookies').addEventListener('click', function() {
+    document.getElementById('cookie-banner').style.display = 'none'; // Banner ausblenden
+    localStorage.setItem('cookiesAccepted', 'true'); // Zustimmung speichern
+});
+
+// Überprüfen, ob der Benutzer bereits zugestimmt hat
+if (localStorage.getItem('cookiesAccepted') === 'true') {
+    document.getElementById('cookie-banner').style.display = 'none'; // Banner nicht anzeigen, wenn Zustimmung gegeben
+}
+</script>
   </body>
 </html>

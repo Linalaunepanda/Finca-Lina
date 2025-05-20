@@ -19,6 +19,11 @@
     <link rel="stylesheet" href="resources/css/style.css" />
   </head>
   <body>
+    <div id="cookie-banner" class="cookie-banner">
+    <p>Diese Webseite verwendet Cookies, um Ihnen das beste Erlebnis auf unserer Website zu bieten. 
+    <a href="datenschutz.html" target="_blank">Mehr erfahren</a>.
+    <button id="accept-cookies" class="cookie-btn">Akzeptieren</button></p>
+</div>
     <!-- Header und Navigation -->
     <!-- Menüleiste -->
     <header class="navbar">
@@ -30,7 +35,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="leistungen.html">Leistungen</a></li>
           <li><a href="über.html">Über Mich</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
+         <!-- <li><a href="#portfolio">Portfolio</a></li> -->
           <li><a href="#contact">Kontakt</a></li>
         </ul>
       </nav>
@@ -121,10 +126,11 @@
           Hast du eine Idee oder ein Projekt, das du umsetzen möchtest? Lass uns
           darüber sprechen!
         </p>
-        <form
-          action="mailto:fincalina@outlook.com"
-          method="post"
-          enctype="text/plain"
+    <!-- Kontakt -->
+
+       <form
+          action="https://formspree.io/f/mblobwkb" 
+          method="POST"
         >
           <input type="text" name="name" placeholder="Dein Name" required />
           <input
@@ -163,5 +169,19 @@
         </div>
       </div>
     </footer>
+
+        <script>
+    // Wenn der Benutzer auf "Akzeptieren" klickt, wird das Banner ausgeblendet und die Zustimmung gespeichert.
+document.getElementById('accept-cookies').addEventListener('click', function() {
+    document.getElementById('cookie-banner').style.display = 'none'; // Banner ausblenden
+    localStorage.setItem('cookiesAccepted', 'true'); // Zustimmung speichern
+});
+
+// Überprüfen, ob der Benutzer bereits zugestimmt hat
+if (localStorage.getItem('cookiesAccepted') === 'true') {
+    document.getElementById('cookie-banner').style.display = 'none'; // Banner nicht anzeigen, wenn Zustimmung gegeben
+}
+</script>
+
   </body>
 </html>
