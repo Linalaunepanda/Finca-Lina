@@ -751,3 +751,189 @@ footer {
         margin-bottom: 20px;
     }
 }
+
+/* Container für den Impressum-Abschnitt */
+#impressum {
+    padding: 80px 20px;  /* Gleiche Padding wie im #hero */
+    background-color: #ffffff;
+    text-align: left;
+    margin: 0 auto;  /* Container wird horizontal zentriert */
+    max-width: 1200px; /* Gleiche max. Breite wie im #style */
+}
+
+/* Überschrift im Impressum */
+#impressum h2 {
+    font-size: 2.5rem; /* Gleiche Schriftgröße wie in anderen h2 Überschriften */
+    color: #1b575c; /* Die gewünschte Textfarbe */
+    margin-bottom: 20px; /* Abstände zur nächsten Textgruppe */
+}
+
+/* Stil für die Absätze im Impressum */
+#impressum p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+#impressum p a {
+    color: #1b575c; /* Farbige Links */
+    text-decoration: none;
+}
+
+#impressum p a:hover {
+    color: #e52a65; /* Hover-Effekt für Links */
+}
+
+
+/* Container für den Datenschutzerklärungs-Abschnitt */
+#privacy-policy {
+    padding: 80px 20px;  /* Gleiche Padding wie im #hero */
+    background-color: #ffffff;
+    text-align: left;
+    margin: 0 auto; /* Container wird horizontal zentriert */
+    max-width: 1200px; /* Gleiche max. Breite wie im #style */
+}
+
+/* Überschrift im Datenschutzerklärung */
+#privacy-policy h2 {
+    font-size: 2.5rem; /* Gleiche Schriftgröße wie in anderen h2 Überschriften */
+    color: #1b575c; /* Die gewünschte Textfarbe */
+    margin-bottom: 20px; /* Abstände zur nächsten Textgruppe */
+}
+
+/* Unterüberschriften (h3) im Datenschutzerklärung */
+#privacy-policy h3 {
+    font-size: 2rem; /* Größe für h3 */
+    color: #1b575c;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+/* Stil für die Absätze im Datenschutzerklärung */
+#privacy-policy p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+#privacy-policy p a {
+    color: #1b575c; /* Farbige Links */
+    text-decoration: none;
+}
+
+#privacy-policy p a:hover {
+    color: #e52a65; /* Hover-Effekt für Links */
+}
+
+/* Listenelemente für die Rechte des Nutzers */
+#privacy-policy ul {
+    margin-left: 20px;
+}
+
+#privacy-policy ul li {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Hervorhebung von wichtigen Textstellen */
+.highlight-bold {
+    font-weight: bold;
+    color: #f78f1e; /* Orange für hervorheben */
+}
+
+
+/* Container für den AGB-Abschnitt */
+#terms-and-conditions {
+    padding: 80px 20px;  /* Gleiche Padding wie im #privacy-policy und #impressum */
+    background-color: #ffffff;
+    text-align: left;
+    margin: 0 auto; /* Container wird horizontal zentriert */
+    max-width: 1200px; /* Gleiche max. Breite wie in den anderen Abschnitten */
+}
+
+/* Der Container für inneren Abstand und Inhalt */
+.container {
+    max-width: 1200px;  /* Gleiche Maximalbreite wie im #hero */
+    margin: 0 auto;  /* Zentriert den Container */
+    padding: 20px;  /* Der innere Abstand bleibt gleich */
+}
+
+/* Überschrift für den AGB-Abschnitt */
+#terms-and-conditions h2 {
+    font-size: 2.5rem;  /* Gleiche Schriftgröße wie für andere h2 Überschriften */
+    color: #1b575c;  /* Gleiche Textfarbe wie auf der gesamten Seite */
+    margin-bottom: 20px;  /* Abstand nach unten */
+}
+
+/* Unterüberschrift (h3) */
+#terms-and-conditions h3 {
+    font-size: 2rem;  /* Gleiche Größe wie andere h3-Überschriften */
+    color: #1b575c;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+/* Zeilenabstände im Text */
+#terms-and-conditions p {
+    font-size: 1.2rem;  /* Schriftgröße wie auf der restlichen Seite */
+    color: #333;  /* Textfarbe */
+    line-height: 1.6;  /* Angemessener Zeilenabstand für bessere Lesbarkeit */
+    margin-bottom: 20px;  /* Abstand zum nächsten Absatz */
+}
+
+/* Hervorhebung von wichtigen Textstellen */
+.highlight-bold {
+    font-weight: bold;
+    color: #f78f1e; /* Orange für hervorheben */
+}
+
+/* Content Wrappers für Text und Bild nebeneinander */
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.content-wrapper.reverse {
+    flex-direction: row-reverse;
+}
+
+.text-left, .text-right {
+    width: 45%;
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+    max-width: 400px; /* Die max. Breite der Bilder */
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+/* Bilder (links und rechts) */
+.image-left, .image-right {
+    width: 45%;
+}
+
+@media (max-width: 768px) {
+    #terms-and-conditions {
+        padding: 40px 20px; /* Etwas weniger Padding für kleine Bildschirme */
+    }
+
+    .text-left, .image-right {
+        width: 100%;
+    }
+
+    .about-image {
+        max-width: 80%;
+    }
+}
