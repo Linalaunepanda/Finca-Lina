@@ -998,4 +998,113 @@ footer {
     font-size: 1rem;
     margin-bottom: 12px;
   }
+  #why-choose {
+    padding: 30px 10px;
+  }
+  #why-choose h2 {
+    font-size: 1.3rem;
+    margin-bottom: 14px;
+  }
+  #why-choose p {
+    font-size: 1rem;
+    margin-bottom: 12px;
+  }
+
+  /* Pakete-Container */
+  .pakete-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+  }
+  .paket {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    padding: 15px;
+  }
+  .paket h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+  }
+  .paket p {
+    font-size: 0.95rem;
+  }
+
+  /* About-me & Style: Text über Bild */
+  #about-me .content-wrapper,
+  #style .content-wrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+  #about-me .text-left,
+  #style .text-left {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 18px;
+  }
+  #about-me .image-right,
+  #style .image-right {
+    width: 100%;
+    margin: 0 auto 18px auto;
+    text-align: center;
+  }
+  #about-me .image-right img,
+  #style .image-right img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+  }
+   .highlight-box {
+    font-size: 1rem;
+    padding: 12px;
+    margin: 16px 0;
+    border-left: 4px solid #f78f1e;
+    border-radius: 6px;
+    text-align: center;
+  }
+   .content-wrapper.reverse .image-left img,
+  .content-wrapper.reverse .image-right img {
+    width: 220px;
+    height: 220px;
+    max-width: 90vw;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto 18px auto;
+  }
+  #values {
+    padding: 40px 10px;
+    text-align: center;
+  }
+  .values-content {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+    margin-bottom: 0;
+  }
+  .text-left {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 16px;
+    padding: 0;
+  }
+  .icon-box {
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 16px;
+    text-align: center;
+  }
+  .highlight-box {
+    font-size: 1rem;
+    padding: 12px;
+    margin: 16px 0;
+    border-left: none;
+    border-radius: 6px;
+    border-top: 4px solid #f78f1e;
+    text-align: center;
+  }
 }
