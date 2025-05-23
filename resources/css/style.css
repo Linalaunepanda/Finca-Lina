@@ -608,6 +608,7 @@ footer {
 /* Bilder (links und rechts) */
 .image-left, .image-right {
     width: 45%;
+    border-radius: 10px;
 }
 
 /* Box für Highlights */
